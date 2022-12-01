@@ -31,11 +31,13 @@ namespace CatalogWitcherEditDatabase.View
             using (SqlConnection conn = singleton.SqlConnectionFunction())
             {
                 conn.Open();
-                string commStr = $"insert into [Characters]([Name],[Sex],[Race],[Occupation],[Belonging],[Description],[Img],[CharaptersId]) values({this._name.Text},{this._sex.Text},{this._race.Text},{this._occup.Text},{this._belong.Text},{this._desc.Text},{this._img.Text},{this._chapterId.Text})";
+                string commStr = $"insert into [Characters]([Name],[Sex],[Race],[Occupation],[Belonging],[Description],[Img],[CharaptersId]) values(\'{this._name.Text}\',\'{this._sex.Text}\',\'{this._race.Text}\',\'{this._occup.Text}\',\'{this._belong.Text}\',\'{this._desc.Text}\',\'{this._img.Text}\',{Convert.ToInt32(this._chapterId.Text)})";
                 using (SqlCommand command = new SqlCommand(commStr, conn))
                 {
-                    SqlDataReader sqlData = command.ExecuteReader();
-
+                    if (command.ExecuteNonQuery() > 0)
+                    {
+                        this.Close();
+                    }
                 }
             }
         }
