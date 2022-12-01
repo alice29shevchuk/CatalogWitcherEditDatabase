@@ -17,7 +17,7 @@
             <ColumnDefinition></ColumnDefinition>
             <ColumnDefinition></ColumnDefinition>
         </Grid.ColumnDefinitions>
-        <Button Background="Orange" FontSize="20" Grid.Row="0" Grid.ColumnSpan="3" FontFamily="Algerian">Add Character</Button>
+        <Button Background="Orange" FontSize="20" Grid.Row="0" Grid.ColumnSpan="3" FontFamily="Algerian" Click="Button_Click">Add Character</Button>
         <Button Background="Orange" FontSize="20" Grid.Row="1" Grid.ColumnSpan="3" FontFamily="Algerian">Delete Character</Button>
         <Button Background="Orange" FontSize="20" Grid.Row="2" Grid.ColumnSpan="3" FontFamily="Algerian">Update Character</Button>
     </Grid>

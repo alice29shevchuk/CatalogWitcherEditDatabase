@@ -1,4 +1,5 @@
-﻿using System;
+﻿using CatalogWitcherEditDatabase.View;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -23,6 +24,12 @@ namespace CatalogWitcherEditDatabase
         public MainWindow()
         {
             InitializeComponent();
+        }
+
+        private void Button_Click(object sender, RoutedEventArgs e)
+        {
+            Adding adding = new Adding();
+            adding.ShowDialog();
         }
     }
 }

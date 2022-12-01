@@ -1,0 +1,45 @@
+﻿<Window x:Class="CatalogWitcherEditDatabase.View.Adding"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:CatalogWitcherEditDatabase.View"
+        mc:Ignorable="d"
+        Title="Adding" Height="550" Width="400">
+    <Grid Background="Orange">
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition></ColumnDefinition>
+            <ColumnDefinition></ColumnDefinition>
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition></RowDefinition>
+            <RowDefinition></RowDefinition>
+            <RowDefinition></RowDefinition>
+            <RowDefinition></RowDefinition>
+            <RowDefinition></RowDefinition>
+            <RowDefinition></RowDefinition>
+            <RowDefinition></RowDefinition>
+            <RowDefinition></RowDefinition>
+            <RowDefinition></RowDefinition>
+        </Grid.RowDefinitions>
+        <TextBlock Grid.Row="0" Grid.Column="0" FontSize="20" TextAlignment="Center" VerticalAlignment="Center" FontFamily="Algerian">Name</TextBlock>
+        <TextBlock Grid.Row="1" Grid.Column="0" FontSize="20" TextAlignment="Center" VerticalAlignment="Center" FontFamily="Algerian">Sex</TextBlock>
+        <TextBlock Grid.Row="2" Grid.Column="0" FontSize="20" TextAlignment="Center" VerticalAlignment="Center" FontFamily="Algerian">Race</TextBlock>
+        <TextBlock Grid.Row="3" Grid.Column="0" FontSize="20" TextAlignment="Center" VerticalAlignment="Center" FontFamily="Algerian">Occupation</TextBlock>
+        <TextBlock Grid.Row="4" Grid.Column="0" FontSize="20" TextAlignment="Center" VerticalAlignment="Center" FontFamily="Algerian">Belonging</TextBlock>
+        <TextBlock Grid.Row="5" Grid.Column="0" FontSize="20" TextAlignment="Center" VerticalAlignment="Center" FontFamily="Algerian">Description</TextBlock>
+        <TextBlock Grid.Row="6" Grid.Column="0" FontSize="20" TextAlignment="Center" VerticalAlignment="Center" FontFamily="Algerian">Img</TextBlock>
+        <TextBlock Grid.Row="7" Grid.Column="0" FontSize="20" TextAlignment="Center" VerticalAlignment="Center" FontFamily="Algerian">ChapterId</TextBlock>
+
+        <TextBox Name="_name" Grid.Row="0" Grid.Column="1" Background="LightGray" FontSize="20"></TextBox>
+        <TextBox Name="_sex" Grid.Row="1" Grid.Column="1" Background="LightGray" FontSize="20"></TextBox>
+        <TextBox Name="_race" Grid.Row="2" Grid.Column="1" Background="LightGray" FontSize="20"></TextBox>
+        <TextBox Name="_occup" Grid.Row="3" Grid.Column="1" Background="LightGray" FontSize="20"></TextBox>
+        <TextBox Name="_belong" Grid.Row="4" Grid.Column="1" Background="LightGray" FontSize="20"></TextBox>
+        <TextBox Name="_desc" Grid.Row="5" Grid.Column="1" Background="LightGray" FontSize="20"></TextBox>
+        <TextBox Name="_img" Grid.Row="6" Grid.Column="1" Background="LightGray" FontSize="20"></TextBox>
+        <TextBox Name="_chapterId" Grid.Row="7" Grid.Column="1" Background="LightGray" FontSize="20"></TextBox>
+
+        <Button Grid.ColumnSpan="2" Grid.Column="0" Grid.Row="8" Background="Orange" BorderBrush="Black" FontSize="30" FontFamily="Algerian" Click="Button_Click">Confirm</Button>
+    </Grid>
+</Window>
